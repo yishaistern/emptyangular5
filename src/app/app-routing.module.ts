@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { Links } from './classes/global-objects';
 
 const routes: Routes = [
-    {path: Links.newSynagogue, loadChildren: 'app/pages/newSynagogue/newSynagogue.module#ewSynagogueModule'}
+    {path: Links.newSynagogue, loadChildren: 'app/pages/newSynagogue/newSynagogue.module#NewSynagogueModule'}
 ];
 
 @NgModule({
