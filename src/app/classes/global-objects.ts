@@ -5,3 +5,9 @@ export class GlobalObjects {
 export enum Links {
     newSynagogue = 'newSynagogue'
 }
+
+/**languages enum */
+export enum Language {
+    he = 'he',
+    en = 'en'
+}
