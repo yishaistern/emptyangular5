@@ -1,6 +1,6 @@
 <div class="wrap">
-  <div class="border" (click)="openEdit()">
-    <div class="contact">{{}}</div>
-    <div class="demi-placeholder">{{set.diction[dictionstr]}}</div>
+  <div class="border cRel" (click)="openEdit()">
+    <div [ngClass]="{'caNon': !synagogue[field]}" class="contact">{{synagogue[field]}}</div>
+    <div [ngClass]="{'caNon': (synagogue[field])}" class="demi-placeholder">{{set.diction[dictionstr]}}</div>
   </div>
 </div>

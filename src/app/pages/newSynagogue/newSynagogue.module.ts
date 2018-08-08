@@ -9,12 +9,13 @@ import { HeaderComponent } from './header/header.component';
 import { DetailsComponent } from './details/details.component';
 import { PryDetailsComponent } from './pry-details/pry-details.component';
 import { FooterComponent } from './footer/footer.component';
+import { EditorComponent } from './editor/editor.component';
 
 @NgModule({
   imports: [
     CommonModule,
     NewSynagogueRoutingModule
   ],
-  declarations: [MainComponent, OneFieldComponent, BoxpickComponent, HeaderComponent, DetailsComponent, PryDetailsComponent, FooterComponent]
+  declarations: [MainComponent, OneFieldComponent, BoxpickComponent, HeaderComponent, DetailsComponent, PryDetailsComponent, FooterComponent, EditorComponent]
 })
 export class NewSynagogueModule { }
