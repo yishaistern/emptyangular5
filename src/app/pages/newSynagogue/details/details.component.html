@@ -1,3 +1,6 @@
 <div class="main-wrapper">
-  <app-one-field [synagogue]="synagogue" [dictionstr]="'namae'" [field]="'name'"></app-one-field>
+  <div class="editWrapper" [ngClass]="{'show-edit': showEditor}">
+      <app-editor *ngIf="openEditor"></app-editor>
+  </div>
+  <app-one-field (emit)="onEdit($event)" [synagogue]="synagogue" [dictionstr]="'namae'" [field]="'name'"></app-one-field>
 </div>

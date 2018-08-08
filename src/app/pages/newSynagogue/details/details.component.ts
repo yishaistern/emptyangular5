@@ -6,6 +6,7 @@ import { Synagogue } from '../../../classes/synagogue';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
+  openEditor: boolean;
   @Input() synagogue: Synagogue;
   constructor() { }
 
