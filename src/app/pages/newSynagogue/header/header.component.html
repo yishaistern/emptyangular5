@@ -1,0 +1,9 @@
+<header class="cFlexsrech cFtr cvw100">
+  <div class="title">
+      {{set.diction.newSynagogueTitle}}
+  </div>
+  <div class="cFlexsrech" [ngClass]="{'caNon': !showDetails}">
+    <button (click)="pick(1)" class="btn small-btn btn-blue take-left">{{set.diction.shortDetails}}</button>
+    <button (click)="pick(2)" class="btn small-btn btn-blue">{{set.diction.shortprayDetails}}</button>
+  </div>
+</header>

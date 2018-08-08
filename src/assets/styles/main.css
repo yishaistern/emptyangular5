@@ -1,0 +1,22 @@
+/** global **/
+body {
+    margin: 0;
+}
+/** buttons */
+.btn-blue {
+    border-radius: 4px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
+.btn {
+    text-align: center;
+}
+.small-btn {
+    padding: 2vw 2vw 2vw 2vw;
+    font-size: 4.5vw;
+}
+
+button {
+    background: initial;
+    border: initial;
+}

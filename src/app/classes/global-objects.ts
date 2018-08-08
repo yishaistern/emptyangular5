@@ -11,3 +11,31 @@ export enum Language {
     he = 'he',
     en = 'en'
 }
+
+/** direction enum */
+export enum Directions {
+    rtl = 'rtl',
+    ltr = 'ltr'
+}
+
+export class Dayes {
+    sunday: string;
+    monday: string;
+    tuesday: string;
+    wednesday: string;
+    thursday: string;
+    friday: string;
+}
+
+export class PrayNames {
+    shacharit: string;
+    mincha: string;
+    maraiv: string;
+    kids: string;
+    mosaf: string;
+}
+
+export enum DetailsSynagogue {
+    pry = 'pray',
+    synagogue = 'synagogue'
+}

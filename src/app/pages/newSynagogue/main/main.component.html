@@ -1,0 +1,2 @@
+<app-header [detailsChange]="showDetails" (emit)="onPick($event)"></app-header>
+<app-boxpick [ngClass]="{'caNon': showDetails}" (emit)="onPick($event)"></app-boxpick>

@@ -1,5 +1,34 @@
 {
     "newSynagogueTitle": "בית כנסת/מניין חדש",
     "newNmae": "שם",
-    "adress": "כתובת"
+    "adress": "כתובת",
+    "day": "יום",
+    "dayes": "ימים",
+    "shortDayes": {
+        "sunday":"א",
+        "monday": "ב",
+        "tuesday": "ג",
+        "wednesday":"ד",
+        "thursday":"ה",
+        "friday":"ו"
+    },
+    "fullDayes" : {
+        "sunday":"יום ראשון",
+        "monday": "יום שני",
+        "tuesday": "יום שלישי",
+        "wednesday":"יום רביעי",
+        "thursday":"יום חמישי",
+        "friday":"יום שישי"
+    },
+    "prayNames": {
+        "shacharit":"שחרית",
+        "mincha": "מנחה",
+        "maraiv":"ערבית",
+        "kids":"תפילת ילדים",
+        "mosaf":"מוסף"
+    },
+    "synagogueDetails": "פרטי בית הכנסת / המניין",
+    "prayDetails": "פרטי התפילות",
+    "shortDetails": "מיקום",
+    "shortprayDetails": "תפילות"
 }

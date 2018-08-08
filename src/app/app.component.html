@@ -1,4 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-
+<div *ngIf="set.diction" [ngClass]="{'cDirLtr': set.direction === 'ltr', 'cDirRtl': set.direction === 'rtl'}" class="main">
 <router-outlet></router-outlet>
+</div>
