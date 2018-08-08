@@ -9,6 +9,8 @@ import { DetailsSynagogue } from '../../../classes/global-objects';
 })
 export class MainComponent implements OnInit {
   showDetails: DetailsSynagogue;
+  flag1Details = DetailsSynagogue.pry;
+  flag2Details = DetailsSynagogue.synagogue;
   constructor(private router: Router, private set: Settings) { }
   /** alert main component that the user picked what to see */
   onPick($event: DetailsSynagogue): void {
