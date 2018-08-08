@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Synagogue } from '../../../classes/synagogue';
+import { detailTypes } from '../../../classes/global-objects';
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
@@ -14,7 +15,7 @@ export class DetailsComponent implements OnInit {
   ngOnInit() {
   }
   /** when user wants to edit a field for the synagogue */
-  onEdit($event) {
+  onEdit($event: detailTypes) {
     console.log($event);
     this.openEditor = true;
     setTimeout(this.showEditor = true , 10);

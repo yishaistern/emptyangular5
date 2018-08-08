@@ -44,3 +44,8 @@ export enum detailTypes {
     autocomplete = 'autocomplete',
     normal = 'normal'
 }
+
+export interface Fulldiction {
+    feild: string;
+    diction: string;
+}

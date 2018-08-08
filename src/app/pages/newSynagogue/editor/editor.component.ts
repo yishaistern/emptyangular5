@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Settings } from '../../../classes/global-objects/settings';
-import { detailTypes } from '../../../classes/global-objects';
+import { detailTypes, Fulldiction } from '../../../classes/global-objects';
 @Component({
   selector: 'app-editor',
   templateUrl: './editor.component.html',
