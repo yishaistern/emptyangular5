@@ -7,8 +7,7 @@ import { detailTypes, Fulldiction } from '../../../classes/global-objects';
   styleUrls: ['./editor.component.scss']
 })
 export class EditorComponent implements OnInit {
-  @Input() feild: string;
-  @Input() title: string;
+  @Input() full: Fulldiction;
   @Input() type: detailTypes;
   constructor(private set: Settings) { }
 
