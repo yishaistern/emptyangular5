@@ -12,8 +12,8 @@ export class Minyan {
     private name: string;
     private day: string;
     private shortDay: string;
-    startime: string;
-    endtime: string;
-    howMuchTime: string;
-    specialPlace: string;
+    private startime: string;
+    private endtime: string;
+    private howMuchTime: string;
+    private specialPlace: string;
 }

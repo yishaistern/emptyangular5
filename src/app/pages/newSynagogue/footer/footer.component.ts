@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Settings } from '../../../classes/global-objects/settings';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private set: Settings) { }
 
   ngOnInit() {
   }
+  /** save synagouge */
+  save(): void {
 
+  }
 }

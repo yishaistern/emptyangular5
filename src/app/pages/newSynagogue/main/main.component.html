@@ -1,4 +1,7 @@
 <app-header [detailsChange]="showDetails" (emit)="onPick($event)"></app-header>
-<app-boxpick [ngClass]="{'caNon': showDetails}" (emit)="onPick($event)"></app-boxpick>
-<app-details [ngClass]="{'caNon': showDetails === flag2Details}"></app-details>
-<app-pry-details [ngClass]="{'caNon': showDetails === flag1Details}"></app-pry-details>
+<div class="wrapper">
+    <app-boxpick [ngClass]="{'caNon': showDetails}" (emit)="onPick($event)"></app-boxpick>
+    <app-details [synagogue]="synagogue" [ngClass]="{'caNon': !(showDetails === flag2Details)}"></app-details>
+    <app-pry-details [synagogue]="synagogue" [ngClass]="{'caNon': !(showDetails === flag1Details)}"></app-pry-details>
+</div>
+<app-footer></app-footer>
