@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Settings } from '../../../classes/global-objects/settings';
+import { detailTypes } from '../../../classes/global-objects';
 @Component({
   selector: 'app-editor',
   templateUrl: './editor.component.html',
   styleUrls: ['./editor.component.scss']
 })
 export class EditorComponent implements OnInit {
-
-  constructor() { }
+  @Input() feild: string;
+  @Input() type: detailTypes;
+  constructor(private set: Settings) { }
 
   ngOnInit() {
+    this.specialInit();
+  }
+  /** does the componet need ant special init */
+  specialInit() {
+
   }
 
 }

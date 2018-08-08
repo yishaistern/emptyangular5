@@ -1,0 +1,12 @@
+.wrap {
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.elemWrapper {
+    width: 80vw;
+    background-color: #fff;
+    padding: 4vw 3vw;
+}

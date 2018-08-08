@@ -39,3 +39,8 @@ export enum DetailsSynagogue {
     pry = 'pray',
     synagogue = 'synagogue'
 }
+
+export enum detailTypes {
+    autocomplete = 'autocomplete',
+    normal = 'normal'
+}

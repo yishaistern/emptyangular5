@@ -7,6 +7,7 @@ import { Synagogue } from '../../../classes/synagogue';
 })
 export class DetailsComponent implements OnInit {
   openEditor: boolean;
+  showEditor: boolean;
   @Input() synagogue: Synagogue;
   constructor() { }
 
