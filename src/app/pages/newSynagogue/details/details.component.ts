@@ -13,5 +13,10 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  /** when user wants to edit a field for the synagogue */
+  onEdit($event) {
+    console.log($event);
+    this.openEditor = true;
+    setTimeout(this.showEditor = true , 10);
+  }
 }

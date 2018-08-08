@@ -8,6 +8,7 @@ import { detailTypes } from '../../../classes/global-objects';
 })
 export class EditorComponent implements OnInit {
   @Input() feild: string;
+  @Input() title: string;
   @Input() type: detailTypes;
   constructor(private set: Settings) { }
 
