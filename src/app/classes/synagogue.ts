@@ -2,6 +2,7 @@ export class Synagogue {
     name: string;
     city: string;
     fullAddress: string;
+    street: string;
     streetNumber: string;
     emailGabay: string;
     lat: number;
