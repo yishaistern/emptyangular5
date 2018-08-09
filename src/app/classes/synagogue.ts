@@ -6,6 +6,8 @@ export class Synagogue {
     streetNumber: string;
     emailGabay: string;
     lat: number;
+    bounds: any;
+    googlebounds: any;
     lan: number;
     explanation: string;
     setNmae(name: string): void {
