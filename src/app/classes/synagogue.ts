@@ -6,6 +6,12 @@ export class Synagogue {
     emailGabay: string;
     lat: number;
     lan: number;
+    setNmae(name: string): void {
+        this.name = name;
+    }
+    getNmae(): string {
+        return this.name;
+    }
 }
 
 export class Minyan {

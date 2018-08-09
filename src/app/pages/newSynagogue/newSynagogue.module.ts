@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { SynagogueService } from '../../services/synagogue/synagogue.service';
 import { NewSynagogueRoutingModule } from './newSynagogue-routing.module';
 import { MainComponent } from './main/main.component';
 import { OneFieldComponent } from './one-field/one-field.component';
@@ -16,6 +16,9 @@ import { EditorComponent } from './editor/editor.component';
     CommonModule,
     NewSynagogueRoutingModule
   ],
-  declarations: [MainComponent, OneFieldComponent, BoxpickComponent, HeaderComponent, DetailsComponent, PryDetailsComponent, FooterComponent, EditorComponent]
+  declarations: [
+    MainComponent, OneFieldComponent, BoxpickComponent, HeaderComponent,
+    DetailsComponent, PryDetailsComponent, FooterComponent, EditorComponent],
+  providers : [ SynagogueService]
 })
 export class NewSynagogueModule { }

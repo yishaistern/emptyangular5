@@ -9,6 +9,7 @@ import { detailTypes, Fulldiction } from '../../../classes/global-objects';
 export class EditorComponent implements OnInit {
   @Input() full: Fulldiction;
   @Input() type: detailTypes;
+  @Output() emit: EventEmitter<string> = new EventEmitter(undefined);
   constructor(private set: Settings) { }
 
   ngOnInit() {
@@ -16,6 +17,13 @@ export class EditorComponent implements OnInit {
   }
   /** does the componet need ant special init */
   specialInit() {
+
+  }
+  /** WHEN user finishes to edit */
+  onblur($event) {
+    if ($event.target) {
+      this.emit.emit($event.target.value);
+    }
 
   }
 
