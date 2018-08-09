@@ -12,6 +12,7 @@ export class DetailsComponent implements OnInit {
   showEditor: boolean;
   type: detailTypes;
   full: Fulldiction;
+  map: google.maps.Map;
   @Input() synagogue: Synagogue;
   constructor(private synService: SynagogueService, private zone: NgZone) { }
 
@@ -37,12 +38,35 @@ export class DetailsComponent implements OnInit {
     setTimeout(this.showEditor = false , 10);
     this.editField($event);
   }
+  /** map start */
+  initMap(content) {
+    if (content.geometry && content.geometry.location) {
+      this.map = new google.maps.Map(document.getElementById('map'),
+      {
+        center: content.geometry.location,
+        zoom: 14,
+        panControl: false,
+        rotateControl: false,
+        mapTypeControl: false,
+        fullscreenControl: false,
+        streetViewControl: false,
+        zoomControl: false
+      });
+      if (content.geometry.viewport) {
+        setTimeout(this.map.fitBounds(content.geometry.viewport), 10);
+      }
+      console.log(content);
+    }
+  }
   /** edit the feild of the synagogue */
   editField(content: any) {
     this.synService.editAfield(this.synagogue, this.full.feild, content);
     this.zone.run(() => { });
     switch (this.full.feild) {
-      case 'name':
+      case 'fullAddress':
+        console.log(content);
+        this.initMap(content);
+        break;
 
     }
   }
