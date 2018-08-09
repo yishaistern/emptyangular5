@@ -3,4 +3,5 @@
       <app-editor [full]="full" [type]="type" *ngIf="openEditor" (emit)="finishEditing($event)"></app-editor>
   </div>
   <app-one-field (emit)="onEdit($event)" [synagogue]="synagogue" [dictionstr]="'namae'" [field]="'name'"></app-one-field>
+  <app-one-field (emit)="onEdit($event)" [synagogue]="synagogue" [dictionstr]="'address'" [field]="'fullAddress'"></app-one-field>
 </div>

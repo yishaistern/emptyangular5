@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, NgZone } from '@angular/core';
 import { Synagogue } from '../../../classes/synagogue';
 import { detailTypes, Fulldiction } from '../../../classes/global-objects';
 import { SynagogueService } from '../../../services/synagogue/synagogue.service';
@@ -13,7 +13,7 @@ export class DetailsComponent implements OnInit {
   type: detailTypes;
   full: Fulldiction;
   @Input() synagogue: Synagogue;
-  constructor(private synService: SynagogueService) { }
+  constructor(private synService: SynagogueService, private zone: NgZone) { }
 
   ngOnInit() {
   }
@@ -32,14 +32,15 @@ export class DetailsComponent implements OnInit {
     setTimeout(this.showEditor = true , 10);
   }
   /** User finshed to editing */
-  finishEditing($event) {
+  finishEditing($event: any): void {
     this.openEditor = false;
     setTimeout(this.showEditor = false , 10);
     this.editField($event);
   }
   /** edit the feild of the synagogue */
-  editField($event) {
-    this.synService.editAfield();
+  editField(content: any) {
+    this.synService.editAfield(this.synagogue, this.full.feild, content);
+    this.zone.run(() => { });
     switch (this.full.feild) {
       case 'name':
 

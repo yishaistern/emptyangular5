@@ -6,6 +6,7 @@ export class Synagogue {
     emailGabay: string;
     lat: number;
     lan: number;
+    explanation: string;
     setNmae(name: string): void {
         this.name = name;
     }
