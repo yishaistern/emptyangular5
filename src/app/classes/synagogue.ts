@@ -16,6 +16,12 @@ export class Synagogue {
     getNmae(): string {
         return this.name;
     }
+    setFullAddress(name: string): void {
+        this.fullAddress = name;
+    }
+    getFullAddress(): string {
+        return this.fullAddress;
+    }
 }
 
 export class Minyan {

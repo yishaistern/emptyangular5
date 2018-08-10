@@ -13,6 +13,7 @@ export class DetailsComponent implements OnInit {
   type: detailTypes;
   full: Fulldiction;
   map: google.maps.Map;
+  marker: google.maps.Marker;
   @Input() synagogue: Synagogue;
   constructor(private synService: SynagogueService, private zone: NgZone) { }
 
@@ -40,6 +41,7 @@ export class DetailsComponent implements OnInit {
   }
   /** map start */
   initMap(content) {
+    const d = this;
     if (content.geometry && content.geometry.location) {
       this.map = new google.maps.Map(document.getElementById('map'),
       {
@@ -52,6 +54,8 @@ export class DetailsComponent implements OnInit {
         streetViewControl: false,
         zoomControl: false
       });
+      const markerOptions = {draggable: true, map: this.map, position: content.geometry.location};
+      this.marker = new google.maps.Marker(markerOptions );
       if (content.geometry.viewport) {
         setTimeout(this.map.fitBounds(content.geometry.viewport), 10);
       }
