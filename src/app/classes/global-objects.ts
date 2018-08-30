@@ -4,7 +4,8 @@ export class GlobalObjects {
 /** Links that will be part of the routing moudle */
 export enum Links {
     newSynagogue = 'newSynagogue',
-    d3 = 'd3test'
+    d3 = 'd3test',
+    chartjs = 'chartjstest'
 }
 
 /**languages enum */

@@ -17,7 +17,7 @@ import {SettingsService} from './services/settings/settings.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [Settings, GetHttpService, PostHttpService, SettingsService],
   bootstrap: [AppComponent]
