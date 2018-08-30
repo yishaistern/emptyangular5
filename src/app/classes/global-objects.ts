@@ -3,7 +3,8 @@ export class GlobalObjects {
 
 /** Links that will be part of the routing moudle */
 export enum Links {
-    newSynagogue = 'newSynagogue'
+    newSynagogue = 'newSynagogue',
+    d3 = 'd3test'
 }
 
 /**languages enum */
